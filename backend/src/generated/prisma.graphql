@@ -1,5 +1,5 @@
 # source: https://eu1.prisma.sh/jakub-naskreski-274867/reactgraphqlstore/dev
-# timestamp: Sat Oct 27 2018 18:17:49 GMT+0200 (Środkowoeuropejski czas letni)
+# timestamp: Wed Oct 31 2018 23:21:35 GMT+0100 (Środkowoeuropejski czas stand.)
 
 type AggregateItem {
   count: Int!
@@ -131,7 +131,7 @@ input ItemUpdateInput {
   price: Int
 }
 
-input ItemUpdateManyInput {
+input ItemUpdateManyMutationInput {
   title: String
   description: String
   image: String
@@ -435,8 +435,8 @@ type Mutation {
   deleteItem(where: ItemWhereUniqueInput!): Item
   upsertUser(where: UserWhereUniqueInput!, create: UserCreateInput!, update: UserUpdateInput!): User!
   upsertItem(where: ItemWhereUniqueInput!, create: ItemCreateInput!, update: ItemUpdateInput!): Item!
-  updateManyUsers(data: UserUpdateManyInput!, where: UserWhereInput): BatchPayload!
-  updateManyItems(data: ItemUpdateManyInput!, where: ItemWhereInput): BatchPayload!
+  updateManyUsers(data: UserUpdateManyMutationInput!, where: UserWhereInput): BatchPayload!
+  updateManyItems(data: ItemUpdateManyMutationInput!, where: ItemWhereInput): BatchPayload!
   deleteManyUsers(where: UserWhereInput): BatchPayload!
   deleteManyItems(where: ItemWhereInput): BatchPayload!
 }
@@ -581,7 +581,7 @@ input UserUpdateInput {
   email: String
 }
 
-input UserUpdateManyInput {
+input UserUpdateManyMutationInput {
   name: String
   email: String
 }
