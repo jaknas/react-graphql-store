@@ -14,7 +14,7 @@ const Cart = () => {
       </header>
 
       <footer>
-        <p>$10.10</p>
+        <p>$10.00</p>
         <SickButton>Checkout</SickButton>
       </footer>
     </CartStyles>
