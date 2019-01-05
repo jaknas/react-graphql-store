@@ -46,7 +46,6 @@ describe('<SingleItem/>', () => {
     );
     await wait();
     wrapper.update();
-    console.log(wrapper.debug());
     const item = wrapper.find('[data-test="graphql-error"]');
     expect(item.text()).toContain('Item Not Found!');
 

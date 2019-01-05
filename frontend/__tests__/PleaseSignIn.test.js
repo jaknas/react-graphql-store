@@ -31,7 +31,6 @@ describe('<PleaseSignIn/>', () => {
     await wait();
     wrapper.update();
     expect(wrapper.text()).toContain('Please Sign In before Continuing');
-    console.log(wrapper.debug());
     expect(wrapper.find('Signin').exists()).toBe(true);
   });
 
@@ -46,7 +45,6 @@ describe('<PleaseSignIn/>', () => {
     );
     await wait();
     wrapper.update();
-    console.log(wrapper.debug());
     expect(wrapper.find('Hey').exists()).toBe(true);
     expect(wrapper.contains(<Hey />)).toBe(true);
   });
