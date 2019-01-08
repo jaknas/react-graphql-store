@@ -52,7 +52,7 @@ class OrderList extends Component {
                       <a>
                         <div className="order-meta">
                           <p>
-                            {order.items.reduce((a, b) => a + b.quantity, 0)}{' '}
+                            {order.items.reduce((a, b) => a + b.quantity, 0)}
                             Items
                           </p>
                           <p>{order.items.length} Products</p>
