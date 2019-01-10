@@ -4,10 +4,10 @@ import Header from './Header';
 import Meta from './Meta';
 
 const theme = {
-  red: '#FF0000',
-  black: '#393939',
-  grey: '#3A3A3A',
-  lightgrey: '#E1E1E1',
+  red: '#ff5e57',
+  black: '#1e272e',
+  grey: '#808e9b',
+  lightgrey: '#d2dae2',
   offWhite: '#EDEDED',
   maxWidth: '1000px',
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
