@@ -1,3 +1,8 @@
-# Advanced-React
+# react-graphql-store-frontend
 
-frontend
+Frontend made with:
+
+- Next.js (SSR)
+- Styled-Components (styling)
+- Apollo Client (cache, state)
+- React-Stripe (for simulated checkout charging)
